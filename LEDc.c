@@ -1,5 +1,5 @@
 //Code to control the LED3 usr by arguments
-//27/04/21
+
 
 #include<stdio.h>
 #include<stdlib.h>

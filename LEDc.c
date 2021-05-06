@@ -29,6 +29,17 @@ int main(int argc, char* argv[]) {
 		RemoveTrigger();
 		WriteLED("/brightness", "0");
 	}
+	
+	else if(strcmp(argv[1], "flash")==0){
+		printf("Flashing the LED3\n");
+		WriteLED("/trigger", "timer");
+		WriteLED("/brightness", "100");
+		WriteLED("/brightness", "100");
+	}
+	else{
+		printf("Invalid comand!\n");
+		return 0;
+	}
 printf("Led Aplication Done \n");	
 	return 0;
 
